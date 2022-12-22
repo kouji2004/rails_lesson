@@ -1,0 +1,2 @@
+module Users::BoxHelper
+end

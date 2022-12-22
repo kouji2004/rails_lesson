@@ -6,4 +6,10 @@ devise_for :users,skip: [:passwords], controllers: {
     sessions: 'users/sessions'
   }
 
+  scope module: :users do
+    resources :box, only: [:index]
+  end
+
+ resources :post, only: [:new, :index, :show, :create]
+
 end
