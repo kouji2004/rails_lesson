@@ -11,5 +11,5 @@ devise_for :users,skip: [:passwords], controllers: {
   end
 
  resources :post, only: [:new, :index, :show, :create]
-
+resources :tests, only: [:index,:new]
 end
